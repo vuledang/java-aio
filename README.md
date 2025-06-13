@@ -40,4 +40,4 @@ helm install user-management helm/user-management
 
 ## Continuous Integration
 
-This repository uses a GitHub Actions workflow that builds the backend with Maven and the frontend with Angular whenever changes are pushed or a pull request is opened.
+This repository uses a GitHub Actions workflow that builds the backend with Maven and the frontend with Angular whenever changes are pushed or a pull request is opened. The workflow also lints the Helm chart to ensure the Kubernetes deployment files are valid.
