@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc",
+    "types": [],
+    "target": "es2022",
+    "module": "es2022",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "lib": ["es2022", "dom"],
+    "noImplicitAny": true
+  }
+}

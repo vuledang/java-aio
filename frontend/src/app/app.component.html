@@ -1,0 +1,9 @@
+<h1>User Management</h1>
+<form (submit)="addUser(); $event.preventDefault();">
+  <input [(ngModel)]="newUser.username" name="username" placeholder="Username" required />
+  <input [(ngModel)]="newUser.email" name="email" placeholder="Email" required />
+  <button type="submit">Add User</button>
+</form>
+<ul>
+  <li *ngFor="let u of users">{{u.username}} - {{u.email}}</li>
+</ul>
