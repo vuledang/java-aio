@@ -4,7 +4,7 @@ This repository contains a minimal user management application with a Spring Boo
 
 ## Backend
 
-The backend code lives in the `backend/` directory. It is built with Maven.
+The backend code lives in the `backend/` directory. It is built with Maven and requires **Java 17**.
 
 ### Build and run locally
 
