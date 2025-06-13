@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "user-management.fullname" . }}
+  labels:
+    app: {{ include "user-management.name" . }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ include "user-management.name" . }}
+  template:
+    metadata:
+      labels:
+        app: {{ include "user-management.name" . }}
+    spec:
+      containers:
+        - name: {{ include "user-management.name" . }}
+          image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - containerPort: {{ .Values.containerPort }}
